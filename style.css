@@ -89,7 +89,7 @@ ul {
 
 /* Hero */
 .hero-image {
-    background-image: url("Images/Hero\ Laptop\ Image.png");
+    background-image: url("./Images/Hero\ Laptop\ Image.png");
     height: 75vh;
     width: 100vw;
     background-position: center;
