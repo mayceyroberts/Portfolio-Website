@@ -18,7 +18,26 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Slab:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/c510c4308a.js" crossorigin="anonymous"></script>     
-<link rel="icon" href="Images/favicon.ico">
+<link rel="icon" href="favicon-16x16.png">
+
+<script>
+function reveal() {
+  var reveals = document.querySelectorAll(".reveal");
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    } else {
+      reveals[i].classList.remove("active");
+    }
+  }
+}
+window.addEventListener("scroll", reveal);
+
+
+</script>
 </head>
 
     <body>
@@ -29,7 +48,7 @@
         <header class="">
             
             <nav id="header">
-                <div class="logo"><img class="lotus" src="Images/android-chrome-192x192.png"><a href="#home">Maycey Roberts</a></div>
+                <div class="logo"><img ><a href="#home">Maycey Roberts</a></div>
                 <div id="navbar">
                 <ul>
                     <li><a href="#contact">Contact</a></li>
@@ -75,10 +94,10 @@
         <div class="container-1">
             <div class="row">
                 <div class="column">
-                    <div class="about-one">
+                    <div class="about-one reveal">
                         <h3>About Me</h3>
-                        <p>I’m a WebDev student from Heber City, Utah. Since beginning my journey with Tech-Moms I have discovered my passion for coding. I am absolutely enamored with learning everything that I can.  I love to push my limits to see what I can do!<br>
-                            When I am not coding, I am a writer, photographer,  true crime enthusiast, musician, game designer, and day dreamer.&hearts;</p>
+                        <p>I’m a WebDev student from Heber City, Utah. Since beginning my journey with Tech-Moms I have discovered my passion for coding. I love to push my limits to see what I can do!<br>
+                            When I am not coding, I am a writer, gamer, photographer, musician, reader, and day dreamer. &hearts;</p>
                     </div>
                 </div>
                 <div class="column">
@@ -109,7 +128,7 @@
         <div class="container-2">
             <div class="row">
                 <div class="column">
-                    <div class="contact-one"><span>Connect</span> <span>with</span> <span>me,</span> <span>and</span> <span>let's</span> <span>create</span> <span>something</span> <span>beautiful</span><br>
+                    <div class="contact-one reveal"><span>Connect</span> <span>with</span> <span>me,</span> <span>and</span> <span>let's</span> <span>create</span> <span>something</span> <span>beautiful</span><br>
                     <a href="mailto:mayceyroberts@gmail.com"><i class="fa-solid fa-square-envelope"></i></a>
                     <a href="https://www.linkedin.com/in/maycey-roberts-45698220b/"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/mayceyroberts"><i class="fa-brands fa-square-github"></i></a><br>
@@ -133,7 +152,7 @@
                             <textarea id="message" placeholder="Message" rows="4" cols="50"></textarea>
                             </label>
                             </fieldset>
-                             <input type="submit" value="Submit">
+                             <input type="submit" value="Send Message">
                             
                             </form>
                     </div>
