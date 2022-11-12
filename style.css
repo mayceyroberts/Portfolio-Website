@@ -35,6 +35,7 @@ img {
   margin: 0 0 500px 800px;
   float: right;
   text-align: right;
+  opacity: .8;
 }
 
 
@@ -45,14 +46,14 @@ img {
     line-height: 0;
     margin-bottom: 75px;
     color: black;
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-weight: 400;
     
 }
 
 .Maycey {
     font-family: 'Sacramento', Arial, Helvetica, sans-serif;
-    font-size: 95px;
+    font-size: 100px;
     font-weight:100;
     line-height: 20px;
     margin-bottom: 75px;
@@ -125,7 +126,7 @@ ul {
 }
 
 .hero-text p {
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
 i {
     font-size: 1.5em;
@@ -372,6 +373,7 @@ nav a:active {
 .about-one p {
     font-family: 'Josefin Slab';
     color: black;
+    font-weight: 500;
     text-align: center;
     padding: 10px 0 10px 60px;
 }
@@ -436,6 +438,7 @@ nav a:active {
     height: 100px;
     margin: 50px 50px 0 50px;
     z-index: 5000;
+    opacity: .8;
     
 }
 
@@ -443,6 +446,7 @@ nav a:active {
   position: absolute;
   height: 150px;
   margin: 0 0 30px 50px;
+  opacity: .8;
 }
 
 .leaf {
@@ -451,6 +455,7 @@ nav a:active {
   display:block;
   margin: 320px 0 0 30px;
   float: left;
+  opacity: .8;
 }
 
 .eyes {
@@ -459,6 +464,7 @@ nav a:active {
   display: block;
   float: left;
   margin: 0 0 30px 20px;
+  opacity: .8;
 }
 
 form {
